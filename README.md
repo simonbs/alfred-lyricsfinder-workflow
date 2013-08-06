@@ -3,7 +3,7 @@ LyricsFinder Workflow for Alfred 2.0
 
 A workflow for Alfred 2.0 which lets you quickly find lyrics for the song currently playing in Spotify.
 
-![](https://raw.github.com/simonbs/alfred-tweetbot-workflow/master/screenshot.png)
+![](https://raw.github.com/simonbs/alfred-lyricsfinder-workflow/master/screenshot.png)
 
 When you type *lyrics* in Alfred, the workflow will search [Lyric Wiki](http://lyrics.wikia.com) for a lyric for the song currently being played in Spotify.
 
