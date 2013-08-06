@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>dk.simonbs.Alfred.LyricsFinder</string>
+	<key>connections</key>
+	<dict>
+		<key>AA85D59E-4E2A-4DD1-871F-0F0393298D72</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C39F93E6-27C2-4F21-9DDB-1EA5CB8E65DF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Simon Støvring (@simonbs)</string>
+	<key>description</key>
+	<string>Find lyrics for the currently playing song</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Lyrics Finder</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>C39F93E6-27C2-4F21-9DDB-1EA5CB8E65DF</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>lyrics</string>
+				<key>runningsubtext</key>
+				<string>Finding lyric...</string>
+				<key>script</key>
+				<string>from LyricsFinder import find
+
+print(find())</string>
+				<key>title</key>
+				<string>Find lyrics for currently playing song</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>AA85D59E-4E2A-4DD1-871F-0F0393298D72</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>AA85D59E-4E2A-4DD1-871F-0F0393298D72</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>C39F93E6-27C2-4F21-9DDB-1EA5CB8E65DF</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://simonbs.dk/</string>
+</dict>
+</plist>
